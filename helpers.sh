@@ -23,7 +23,7 @@
 ###############################################################################
 # Source:
 # [`ezpz/bin/utils.sh`](https://github.com/saforem2/ezpz/blob/main/src/ezpz/bin/utils.sh)
-source <(curl -L https://bit.ly/ezpz-utils) > /dev/null || exit
+source ${PBS_O_WORKDIR}/deps/ezpz/src/ezpz/bin/utils.sh > /dev/null || exit
 ezpz_setup_job >/dev/null || exit
 ###############################################################################
 
